@@ -1,0 +1,126 @@
+/* Style umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f8fd;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Kontainer utama */
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .header h1 {
+    color: #ff69b4;
+    font-size: 3rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Gambar */
+  .image-container {
+    margin-top: 30px;
+  }
+  
+  .birthday-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tombol */
+  .button-container {
+    margin-top: 40px;
+  }
+  
+  button {
+    padding: 15px 25px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Pesan */
+  .message-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9e0e9;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .message-container p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Animasi balon */
+  .balloon {
+    width: 60px;
+    height: 80px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -80px;
+    animation: floatUp 10s infinite ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #balloon1 {
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  #balloon2 {
+    left: 40%;
+    animation-delay: 2s;
+  }
+  
+  #balloon3 {
+    left: 60%;
+    animation-delay: 4s;
+  }
+  
+  #balloon4 {
+    left: 80%;
+    animation-delay: 6s;
+  }
+  
+  #balloon5 {
+    left: 30%;
+    animation-delay: 8s;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+  }
+  
